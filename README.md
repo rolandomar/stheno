@@ -1,9 +1,5 @@
-=========================================================================
-=  NOTICE                                                               =
-=                                                                       = 
-=  Stheno                                                               =
-=  Copyright 2012 Rolando Martins, CRACS & INESC-TEC, DCC/FCUP          =
-=========================================================================
+= Stheno 
+Copyright 2012 Rolando Martins, CRACS & INESC-TEC, DCC/FCUP
 
 This project includes software developed during the PhD of Rolando
 Martins at CRACS & INESC-TEC, DCC/FCUP, with the collaboration of
