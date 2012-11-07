@@ -32,9 +32,8 @@ http://sourceforge.net/projects/unitpp/
 Compiling:
 ==========
 
-$ git clone https://github.com/rolandomar/stheno.git
-$ cd stheno
-$ mkdir build && cd build
-$ cmake .. && make 
-(or make -j#of_processors (e.g., make -j4))
+* $ git clone https://github.com/rolandomar/stheno.git
+* $ cd stheno
+* $ mkdir build && cd build
+* $ cmake .. && make (or make -j#of_processors (e.g., make -j4))
 
