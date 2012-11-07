@@ -29,3 +29,12 @@ software, written and copyrighted by Claus Draeb and David Hallas. The
 original software is available from:
 http://sourceforge.net/projects/unitpp/
 
+Compiling:
+==========
+
+$ git clone https://github.com/rolandomar/stheno.git
+$ cd stheno
+$ mkdir build && cd build
+$ cmake .. && make 
+(or make -j#of_processors (e.g., make -j4))
+
