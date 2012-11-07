@@ -3,9 +3,9 @@ Stheno
 Copyright 2012 Rolando Martins, CRACS & INESC-TEC, DCC/FCUP
 
 This project includes software developed during the PhD of Rolando
-Martins at CRACS & INESC-TEC, DCC/FCUP, with the collaboration of
-Prof. Priya Narasimhan and her research group at Carnegie Mellon
-University.
+Martins, supervised by Fernando da Silva and Luis Lopes, at CRACS &
+INESC-TEC, DCC/FCUP, with the collaboration of Prof. Priya Narasimhan
+and her research group at Carnegie Mellon University.
 
 This software contains code derived from ACE(tm), which is copyrighted
 by Douglas C. Schmidt and his research group at Washington University,
