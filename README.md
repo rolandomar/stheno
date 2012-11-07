@@ -37,3 +37,10 @@ Compiling:
 * $ mkdir build && cd build
 * $ cmake .. && make (or make -j#of_processors (e.g., make -j4))
 
+Generating documentation:
+=========================
+
+The default configuration generates both latex and html documents.
+* $ cd stheno
+* $ doxygen doxygen.conf
+
