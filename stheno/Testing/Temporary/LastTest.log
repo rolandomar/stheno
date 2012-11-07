@@ -1,0 +1,19 @@
+Start testing: Jun 01 13:20 WEST
+----------------------------------------------------------
+Unable to find executable: runtime_test_binary
+1/1 Testing: runtime_test
+1/1 Test: runtime_test
+Command: ""
+Directory: /home/rmartins/NetBeansProjects/middleware/stheno/tests
+"runtime_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"runtime_test" end time: Jun 01 13:20 WEST
+"runtime_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 01 13:20 WEST

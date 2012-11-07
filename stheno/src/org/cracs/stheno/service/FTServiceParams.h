@@ -1,0 +1,62 @@
+/*
+ *  Copyright 2012 Rolando Martins, CRACS & INESC-TEC, DCC/FCUP
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *   
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ * 
+ */
+/* 
+ * File:   FTServiceParams.h
+ * Author: rmartins
+ *
+ * Created on June 26, 2010, 11:27 AM
+ */
+
+#ifndef FTSERVICEPARAMS_H
+#define	FTSERVICEPARAMS_H
+
+
+#include <ace/Synch.h>
+#include <ace/Refcounted_Auto_Ptr.h>
+
+
+#include <euryale/common/uuid/UUID.h>
+#include <euryale/serialization/Serializable.h>
+
+class FTServiceParams {
+public:
+    
+    //policy referes to the type of policy to be used    
+    FTServiceParams(UInt replicaCount,Byte policy);
+    FTServiceParams(InputStream& is);
+    virtual ~FTServiceParams();
+    
+    UInt getReplicaCount(){
+        return m_replicaCount;
+    }
+
+    Byte getFTPolicy(){
+        return m_policy;
+    }
+    
+    virtual void serialize(OutputStream& outputStream) throw (SerializationException&);
+    virtual void deserialize(InputStream& inputStream) throw (SerializationException&);
+    
+protected:
+    UInt m_replicaCount;
+    Byte m_policy;
+};
+
+typedef ACE_Strong_Bound_Ptr<FTServiceParams, ACE_SYNCH_MUTEX> FTServiceParamsPtr;
+
+#endif	/* FTSERVICEPARAMS_H */
+
