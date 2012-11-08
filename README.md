@@ -44,4 +44,4 @@ The default configuration generates both latex and html documents.
 * $ cd stheno
 * $ doxygen doxygen.conf
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/8e17f6e4592b82a47871d5a0d048287e "githalytics.com")](http://githalytics.com/rolandomar/stheno.git)
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/602d4c5d57783f779f0dab6a9540870f "githalytics.com")](http://githalytics.com/rolandomar/stheno)
