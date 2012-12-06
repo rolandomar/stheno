@@ -86,13 +86,13 @@ bool P3Config::lookupValue(const char *path, UInt &value) const throw () {
     return m_config.lookupValue(path, value);
 }
 
-bool P3Config::lookupValue(const char *path, LongLong &value) const throw () {
+/*bool P3Config::lookupValue(const char *path, LongLong &value) const throw () {
     return m_config.lookupValue(path, value);
 }
 
 bool P3Config::lookupValue(const char *path, ULongLong &value) const throw () {
     return m_config.lookupValue(path, value);
-}
+    }*/
 
 bool P3Config::lookupValue(const char *path, Double &value) const throw () {
     return m_config.lookupValue(path, value);

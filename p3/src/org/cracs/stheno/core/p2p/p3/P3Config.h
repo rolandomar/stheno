@@ -43,8 +43,8 @@ public:
     bool lookupValue(const char *path, Int &value) const throw ();
     bool lookupValue(const char *path, Int &value,Int defaultValue);
     bool lookupValue(const char *path, UInt &value) const throw ();
-    bool lookupValue(const char *path, LongLong &value) const throw ();
-    bool lookupValue(const char *path, ULongLong &value) const throw ();
+    //bool lookupValue(const char *path, LongLong &value) const throw ();
+    //bool lookupValue(const char *path, ULongLong &value) const throw ();
     bool lookupValue(const char *path, Double &value) const throw ();
     bool lookupValue(const char *path, Float &value) const throw ();
     bool lookupValue(const char *path, const char *&value) const throw ();
