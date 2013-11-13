@@ -2,7 +2,7 @@ PROJECT(stheno)
 cmake_minimum_required(VERSION 2.8)
 INCLUDE(../config.cmake)
 
-MESSAGE(STATUS, "######## stheno project ########")
+#MESSAGE(STATUS, "######## stheno project ########")
 set(euryale_include_dir ../euryale/src/org/cracs)
 
 IF(CMAKE_BUILD_TYPE STREQUAL "Debug")
@@ -159,7 +159,7 @@ ${stheno_package_core}
 #${stheno_package_p2p}
 ${stheno_package_services}
 )
-MESSAGE(STATUS, "######## stheno sources: "${stheno_package}" ########")
+#MESSAGE(STATUS, "######## stheno sources: "${stheno_package}" ########")
 
 set(stheno_include_dir src/org/cracs/)
 
@@ -170,7 +170,7 @@ include_directories(${stheno_include_dir} ${ace_include_dir} ${crypto_include_di
 
 # Shared Stheno lib
 IF(BUILD_SHARED STREQUAL "TRUE")
-	MESSAGE(STATUS, "######## stheno: "${BUILD_SHARED}" ########")
+	MESSAGE(STATUS, "Stheno: building shared libraries")
 	add_library(stheno SHARED ${stheno_package})	
 	add_dependencies(stheno euryale)
 	TARGET_LINK_LIBRARIES(stheno euryale ${ace_shared_lib} ${crypto_shared_lib} pthread config++)
@@ -180,6 +180,7 @@ ENDIF(BUILD_SHARED STREQUAL "TRUE")
 
 # Static STHENO lib
 IF(BUILD_STATIC STREQUAL "TRUE")
+	MESSAGE(STATUS, "Stheno: building static libraries")
 	add_library(Stheno STATIC  ${sthenoPackage})
 	TARGET_LINK_LIBRARIES(stheno-static euryale-static ${ace_static_lib} ${crypto_static_lib} config++)
 	SET_TARGET_PROPERTIES(stheno-static PROPERTIES OUTPUT_NAME "stheno-static")

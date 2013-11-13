@@ -153,7 +153,7 @@ ${euryale_src_qos_medusa_net}
 ${euryale_src_qos_medusa_mem}
 ${euryale_src_qos_medusa_io})
 
-MESSAGE(STATUS, "######## DEBUG: "${euryale_qos}" ########")
+#MESSAGE(STATUS, "######## DEBUG: "${euryale_qos}" ########")
 
 # Final Euryale package assembly
 set(euryale_package 

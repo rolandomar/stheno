@@ -186,7 +186,7 @@ ${service_actuator_net_packet}
 
 )
 
-MESSAGE(STATUS, "######## p3: "${p3_src_ft_net_control_packet}" ########")
+#MESSAGE(STATUS, "######## p3: "${p3_src_ft_net_control_packet}" ########")
 
 set(p3_superpeer ${p3_base}/p3/superpeer/superpeer_main)
 set(p3_superpeer_plugin_file ${p3_base}/p3/superpeer/superpeer_plugin_startup)
@@ -207,7 +207,7 @@ set(p3_include_dir src/org/cracs/)
 include_directories(${p3_include_dir} ${stheno_include_dir} ${ace_include_dir} ${crypto_include_dir} ${euryale_include_dir})
 
 IF(BUILD_SHARED STREQUAL "TRUE")
-	MESSAGE(STATUS, "######## p3: "${BUILD_SHARED}" ########")
+	MESSAGE(STATUS, "P3: building shared libraries")
 	#add_library(p3 SHARED ${p3_package})
 	#add_dependencies(p3 stheno)
 	#TARGET_LINK_LIBRARIES(p3 stheno euryale ${ace_shared_lib} ${crypto_shared_lib} pthread config++)	       
